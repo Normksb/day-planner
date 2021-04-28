@@ -25,52 +25,62 @@ var button15 = $('#button15');
 var button16 = $('#button16');
 var button17 = $('#button17');
 
-textArea9.val()
+//get the values to assign to text areas from local storage and assign them. No logic added to handle local storage not existing as if there is nothing in local storage setting the text area to blank isn't undesirable.
+textArea9.val(localStorage.getItem("textArea9Value"));
+textArea10.val(localStorage.getItem("textArea10Value"));
+textArea11.val(localStorage.getItem("textArea11Value"));
+textArea12.val(localStorage.getItem("textArea12Value"));
+textArea13.val(localStorage.getItem("textArea13Value"));
+textArea14.val(localStorage.getItem("textArea14Value"));
+textArea15.val(localStorage.getItem("textArea15Value"));
+textArea16.val(localStorage.getItem("textArea16Value"));
+textArea17.val(localStorage.getItem("textArea17Value"));
 
 // button9.addEventListener("click",saveTextArea9);
 
+// added an event listenor to each save button to set the value of localStorage for each text area.
 button9.on('click', function () {
     console.log(textArea9.val())
         localStorage.setItem("textArea9Value",textArea9.val())
 });
 
 button10.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea10.val())
         localStorage.setItem("textArea10Value",textArea10.val())
 });
 
 button11.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea11.val())
         localStorage.setItem("textArea11Value",textArea11.val())
 });
 
 button12.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea12.val())
         localStorage.setItem("textArea12Value",textArea12.val())
 });
 
 button13.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea13.val())
         localStorage.setItem("textArea13Value",textArea13.val())
 });
 
 button14.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea14.val())
         localStorage.setItem("textArea14Value",textArea14.val())
 });
 
 button15.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea15.val())
         localStorage.setItem("textArea15Value",textArea15.val())
 });
 
 button16.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea16.val())
         localStorage.setItem("textArea16Value",textArea16.val())
 });
 
 button17.on('click', function () {
-    console.log(textArea9.val())
+    console.log(textArea17.val())
         localStorage.setItem("textArea17Value",textArea17.val())
 });
 
